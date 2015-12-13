@@ -1,0 +1,11 @@
+
+sut:
+  build: .
+  links:
+    - mongo
+  working_dir: /go/src/github.com/muyiwaolurin/tutum-go-sample
+  command: bash -c "go get -v && go test -v"
+mongo:
+  image: tutum/mongodb
+  environment:
+    - AUTH=no

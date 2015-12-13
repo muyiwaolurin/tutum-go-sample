@@ -1,0 +1,10 @@
+web:
+  image: tutum/tutum-go-sample
+  links:
+    - "mongo:mongo"
+  ports:
+    - "8282"
+mongo:
+  image: tutum/mongodb
+  environment:
+    - AUTH=no
