@@ -3,7 +3,7 @@ web:
   links:
     - "mongo:mongo"
   ports:
-    - "8282"
+    - "3000"
 mongo:
   image: tutum/mongodb
   environment:

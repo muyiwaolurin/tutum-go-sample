@@ -6,6 +6,6 @@ RUN go install github.com/muyiwaolurin/tutum-go-sample
 
 CMD /go/bin/tutum-go-sample
  
-EXPOSE 8282
+EXPOSE 3000
 
 
