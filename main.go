@@ -31,6 +31,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", indexHandler)
-	fmt.Println("Everything is working !\n Listening on port 8282 for requests...")
-	http.ListenAndServe(":8282", nil)
+	fmt.Println("Everything is working !\n Listening on port 80 for requests...")
+	fmt.Println("Anthony - Olurin")
+	http.ListenAndServe(":80", nil)
 }
